@@ -1,4 +1,4 @@
-# rn-elemets-snippets README
+# rn-elemets-snippets
 
 React-native UI lib , React Native Elements is quite popular in development world and visual studio code is prefered editor.
 So this is the lib which will provide the snippets from which Elements can be created by just typing shortest word possible.
