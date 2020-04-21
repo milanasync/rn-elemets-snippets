@@ -1,0 +1,1037 @@
+{
+  "React Native Elements Simple Avatar": {
+    "prefix": "rne-avatar-simple",
+    "body": ["<Avatar", "\ttitle=\"RN\"", "/>"]
+  },
+  "React Native Elements Rounded Avatar": {
+    "prefix": "rne-avatar-rounded",
+    "body": ["<Avatar", "\trounded", "\ttitle=\"RN\"", "/>"]
+  },
+  "React Native Elements Image Avatar": {
+    "prefix": "rne-avatar-img",
+    "body": [
+      "<Avatar",
+      "\trounded",
+      "\tsource={{uri:\"https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg\"}}",
+      "/>"
+    ]
+  },
+  "React Native Elements Icon Avatar": {
+    "prefix": "rne-avatar-icon",
+    "body": ["<Avatar", "\trounded", "\ticon={{name:\"home\"}}", "/>"]
+  },
+  "React Native Elements Edit Avatar With Badge": {
+    "prefix": "rne-avatar-badge",
+    "body": [
+      "<View>",
+      "\t<Avatar",
+      "\t\trounded",
+      "\t\tshowEditButton",
+      "\t\tonEditPress={ _ => alert(\"Edit Pressed.\")}",
+      "\t\tsource={{uri:\"https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg\"}}",
+      "\t/>",
+      "\t<Badge",
+      "\t\tstatus=\"success\"",
+      "\t\tcontainerStyle={{ position: 'absolute', top: -4, right: -4 }}",
+      "\t/>",
+      "</View>"
+    ]
+  },
+  "React Native Elements Edit Avatar": {
+    "prefix": "rne-avatar-edit",
+    "body": [
+      "<Avatar",
+      "\trounded",
+      "\tshowEditButton",
+      "\tonEditPress={ _ => alert(\"Edit Pressed.\")}",
+      "\tsource={{uri:\"https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg\"}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Badge": {
+    "prefix": "rne-badge-simple",
+    "body": ["<Badge", "\tvalue=\"99+\"", "\tstatus=\"error\"", "/>"]
+  },
+  "React Native Elements Badge With Text": {
+    "prefix": "rne-badge-text",
+    "body": ["<Badge", "\tvalue={<Text>RN</Text>}", "\tstatus=\"error\"", "/>"]
+  },
+  "React Native Elements Badge Success": {
+    "prefix": "rne-badge-success",
+    "body": ["<Badge", "\tstatus=\"success\"", "/>"]
+  },
+  "React Native Elements Badge Error": {
+    "prefix": "rne-badge-error",
+    "body": ["<Badge", "\tstatus=\"error\"", "/>"]
+  },
+  "React Native Elements Badge Warning": {
+    "prefix": "rne-badge-warning",
+    "body": ["<Badge", "\tstatus=\"warning\"", "/>"]
+  },
+  "React Native Elements Badge Primary": {
+    "prefix": "rne-badge-primary",
+    "body": ["<Badge", "\tstatus=\"parimary\"", "/>"]
+  },
+
+  "React Native Elements Button": {
+    "prefix": "rne-button",
+    "body": [
+      "<Button",
+      "\t//raised",
+      "\t//loading",
+      "\t//loadingProps http://reactnative.dev/docs/activityindicator#props",
+      "\t//disabled",
+      "\t//disabledStyle",
+      "\ttitle=\"Title\"",
+      "\ttitleStyle={{}}",
+      "\tonPress={_=> alert('Button Pressed.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements Button Outline": {
+    "prefix": "rne-button-outline",
+    "body": [
+      "<Button",
+      "\t//raised",
+      "\t//loading",
+      "\t//loadingProps http://reactnative.dev/docs/activityindicator#props",
+      "\t//disabled",
+      "\t//disabledStyle",
+      "\ttitle=\"Title\"",
+      "\ttitleStyle={{}}",
+      "\ttype=\"outline\"",
+      "\tonPress={_=> alert('Button Pressed.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements Button Clear": {
+    "prefix": "rne-button-clear",
+    "body": [
+      "<Button",
+      "\t//raised",
+      "\t//loading",
+      "\t//loadingProps http://reactnative.dev/docs/activityindicator#props",
+      "\t//disabled",
+      "\t//disabledStyle",
+      "\ttitle=\"Title\"",
+      "\ttitleStyle={{}}",
+      "\ttype=\"clear\"",
+      "\tonPress={_=> alert('Button Pressed.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements Button With Icon": {
+    "prefix": "rne-button-icon",
+    "body": [
+      "<Button",
+      "\ticon={{name:\"home\"}}",
+      "\t//raised",
+      "\t//loading",
+      "\t//loadingProps http://reactnative.dev/docs/activityindicator#props",
+      "\t//disabled",
+      "\t//disabledStyle",
+      "\ttitle=\"Title\"",
+      "\ttitleStyle={{}}",
+      "\ttype=\"clear\" //options(solid, clear, outline)",
+      "\tonPress={_=> alert('Button Pressed.')}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Card": {
+    "prefix": "rne-card",
+    "body": [
+      "<Card",
+      "\ttitle=\"Card Title\"",
+      "\tcontainerStyle={{}}",
+      "\tdividerStyle={{}}",
+      "\twrapperStyle={{}}",
+      ">",
+      "</Card>"
+    ]
+  },
+  "React Native Elements Card With Image": {
+    "prefix": "rne-card-image",
+    "body": [
+      "<Card",
+      "\ttitle=\"Card Title\"",
+      "\tcontainerStyle={{}}",
+      "\tdividerStyle={{}}",
+      "\tfeaturedTitle=\"featured\" // if image props given",
+      "\tfeaturedTitleStyle={{}} // if image props given",
+      "\tfeaturedSubtitle=\"featured\" // if image props given",
+      "\tfeaturedSubtitleStyle={{}} // if image props given",
+      "\timage={} //uri or require path",
+      "\timageStyle={{}}",
+      "\timageWrapperStyle={{}}",
+      "\twrapperStyle={{}}",
+      ">",
+      "</Card>"
+    ]
+  },
+
+  "React Native Elements Checkbox": {
+    "prefix": "rne-checkbox",
+    "body": [
+      "<CheckBox",
+      "\tleft",
+      "\t//right",
+      "\t//center",
+      "\ttitle=\"Click Me.\"",
+      "\t//checkedColor=\"\" default is green",
+      "\t//checkedIcon=\"\" default is check-square-o",
+      "\t//uncheckedIcon=\"\" default is square-o",
+      "\t//uncheckedColor=\"\" default is #bfbfbf",
+      "\t//checkedTitle=\"\"",
+      "\tchecked={true} // maintain it with state",
+      "\tonPress={_=> alert('Checkbox clicked, here have to maintain state.')}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Divider": {
+    "prefix": "rne-divider",
+    "body": ["<Divider", "\tstyle={{}}", "/>"]
+  },
+
+  "React Native Elements Header": {
+    "prefix": "rne-header",
+    "body": [
+      "<Header",
+      "\tplacement=\"center\" // options ('left', 'center' or 'right') ",
+      "\t//containerStyle={{}}",
+      "\tbackgroundColor=\"\"",
+      "\tleftComponent={{ icon: 'menu', color: '#fff' }} // this could be text string, any react component",
+      "\tcenterComponent={{ text: 'MY TITLE', style: { color: '#fff' } }} // this could be text string, any react component",
+      "\trightComponent={{ icon: 'home', color: '#fff' }} // this could be text string, any react component",
+      "\tbarStyle=\"default\" //options ('default', 'light-content', 'dark-content')",
+      "\t//statusBarProps={} // http://reactnative.dev/docs/statusbar.html#props",
+      "/>"
+    ]
+  },
+  "React Native Elements Header With Image background": {
+    "prefix": "rne-header-img",
+    "body": [
+      "<Header",
+      "\tplacement=\"center\" // options ('left', 'center' or 'right') ",
+      "\t//containerStyle={{}}",
+      "\t//backgroundImage={{}}",
+      "\t//backgroundImageStyle={{}}",
+      "\tbackgroundColor=\"\"",
+      "\tleftComponent={{ icon: 'menu', color: '#fff' }} // this could be text string, any react component",
+      "\tcenterComponent={{ text: 'MY TITLE', style: { color: '#fff' } }} // this could be text string, any react component",
+      "\trightComponent={{ icon: 'home', color: '#fff' }} // this could be text string, any react component",
+      "\tbarStyle=\"default\" //options ('default', 'light-content', 'dark-content')",
+      "\t//statusBarProps={} // http://reactnative.dev/docs/statusbar.html#props",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Icon": {
+    "prefix": "rne-icon",
+    "body": [
+      "<Icon",
+      "\ttype=\"material\" //options ('material-community', 'font-awesome', 'octicon', 'ionicon', 'foundation', 'evilicon', 'simple-line-icon', 'zocial', 'entypo', 'feather', 'antdesign')",
+      "\tname=\"rowing\"",
+      "\tsize={26}",
+      "\ticonStyle={{}}",
+      "\tcolor=\"black\"",
+      "\t//disabled",
+      "\t//reverse",
+      "\t//raised",
+      "\tonPress={_=> alert('Icon Pressed!')}",
+      "\t//containerStyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Image": {
+    "prefix": "rne-img",
+    "body": [
+      "<Image",
+      "\tstyle={{ width: 200, height: 200 }}",
+      "\tsource={{ uri: '' }}",
+      "\tPlaceholderContent={<ActivityIndicator />}",
+      "\t//containerStyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Input": {
+    "prefix": "rne-input",
+    "body": [
+      "<Input",
+      "\tplaceholder={'Enter Something'}",
+      "\tlabel={'Enter Something'}",
+      "\tinputContainerStyle={{}}",
+      "\tinputStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//disabled",
+      "\t//disabledInputStyle={{}}",
+      "\terrorMessage={''}",
+      "\t//errorStyle={{}}",
+      "/>"
+    ]
+  },
+  "React Native Elements Input With Left Icon": {
+    "prefix": "rne-input-icon-l",
+    "body": [
+      "<Input",
+      "\tleftIcon={{name:'home'}}",
+      "\tleftIconContainerStyle={{}}",
+      "\tplaceholder={'Enter Something'}",
+      "\tlabel={'Enter Something'}",
+      "\tinputContainerStyle={{}}",
+      "\tinputStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//disabled",
+      "\t//disabledInputStyle={{}}",
+      "\terrorMessage={''}",
+      "\t//errorStyle={{}}",
+      "/>"
+    ]
+  },
+  "React Native Elements Input With Right Icon": {
+    "prefix": "rne-input-icon-r",
+    "body": [
+      "<Input",
+      "\trightIcon={{name:'home'}}",
+      "\trightIconContainerStyle={{}}",
+      "\tplaceholder={'Enter Something'}",
+      "\tlabel={'Enter Something'}",
+      "\tinputContainerStyle={{}}",
+      "\tinputStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//disabled",
+      "\t//disabledInputStyle={{}}",
+      "\terrorMessage={''}",
+      "\t//errorStyle={{}}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item": {
+    "prefix": "rne-list-item",
+    "body": [
+      "<ListItem",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item Icon Left": {
+    "prefix": "rne-list-item-icon-l",
+    "body": [
+      "<ListItem",
+      "\tleftIcon={{name:'home'}}",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item Icon Right": {
+    "prefix": "rne-list-item-icon-r",
+    "body": [
+      "<ListItem",
+      "\trightIcon={{name:'home'}}",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item Avatar left": {
+    "prefix": "rne-list-item-avatar-l",
+    "body": [
+      "<ListItem",
+      "\tleftAvatar={{title:'Title'}} //can have all icon props",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item Avatar right": {
+    "prefix": "rne-list-item-avatar-r",
+    "body": [
+      "<ListItem",
+      "\trightAvatar={{title:'Title'}} //can have all icon props",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item with Switch": {
+    "prefix": "rne-list-item-switch",
+    "body": [
+      "<ListItem",
+      "\tswitch={{title:'Title'}} //can have all switch props",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item with input": {
+    "prefix": "rne-list-item-input",
+    "body": [
+      "<ListItem",
+      "\tinput={{label:'Title'}} //can have all input props",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item with checkBox": {
+    "prefix": "rne-list-item-checkbox",
+    "body": [
+      "<ListItem",
+      "\tcheckBox={{title:'Title'}} //can have all checkBox props",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+  "React Native Elements List Item with badge": {
+    "prefix": "rne-list-item-badge",
+    "body": [
+      "<ListItem",
+      "\tbadge={{value:'Title'}} //can have all badge props",
+      "\ttitle={'Title'}",
+      "\t//titleStyle={{}}",
+      "\tsubtitle={'Sub Title'}",
+      "\t//subtitleStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//bottomDivider",
+      "\t//chevron",
+      "\t//checkmark",
+      "\tonPress={_=> alert('List Item Pressed!.')}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements List Modal": {
+    "prefix": "rne-modal",
+    "body": [
+      "<Overlay",
+      "\tisVisible={false} //manage this with state",
+      "\toverlayBackgroundColor={'white'}",
+      "\twindowBackgroundColor={'rgba(0, 0, 0, .5)'}",
+      "\tonBackdropPress={_=> alert('Backdrop Pressed!.')}",
+      "\t//overlayStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//borderRadius={3}",
+      "\t//children={null} // React Native Component",
+      "\t//fullScreen",
+      "\t//height={100} // default is window height - 180",
+      "\t//width={100} // default is window width - 80",
+      ">",
+      "\t<Text>Modal Body</Text>",
+      "</Overlay>"
+    ]
+  },
+
+  "React Native Elements Pricing Panel": {
+    "prefix": "rne-pricing",
+    "body": [
+      "<PricingCard",
+      "\tprice={'100'}",
+      "\ttitle={'Title'}",
+      "\tbutton={{title: 'Buy', icon: 'home', buttonStyle:{}, titleStyle:{}}}",
+      "\tonButtonPress={_ => alert('Buttoon Pressed!')}",
+      "\tinfo={['Feature 1', 'Feature 2']}",
+      "\t//color={''}",
+      "\t//infoStyle={{}}",
+      "\t//containerStyle={{}}",
+      "\t//pricingStyle={{}}",
+      "\t//titleStyle={{}}",
+      "\t//wrapperStyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Searchbar": {
+    "prefix": "rne-search",
+    "body": [
+      "<SearchBar",
+      "\tplaceholder='search ...'",
+      "\tplaceholderTextColor={'#86939e'}",
+      "\tonChangeText={keyword=> this.setState({keyword})}",
+      "\tonClear={_=> this.setState({keyword: ''})}",
+      "\tonCancel={_=> this.setState({keyword: ''})}",
+      "\tplatform='default' // options(ios / android) ",
+      "\tunderlineColorAndroid='transparent'",
+      "\t//round // if platform is default",
+      "\t//showLoading",
+      "\t//clearIcon={{ name: 'home' }}",
+      "\t//searchIcon={{ name: 'home' }}",
+      "\t//cancelIcon={{ name: 'home' }} // android only",
+      "\t//containerStyle={{}}",
+      "\t//inputContainerStyle={{}}",
+      "\t//inputStyle={{}}",
+      "\t//leftIconContainerStyle={{}}",
+      "\t//rightIconContainerStyle={{}}",
+      "/>"
+    ]
+  },
+  "React Native Elements FB-Button": {
+    "prefix": "rne-fb",
+    "body": [
+      "<SocialIcon",
+      "\ttype='facebook'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('Fb Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements angellist-Button": {
+    "prefix": "rne-angellist",
+    "body": [
+      "<SocialIcon",
+      "\ttype='angellist'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('angellist Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements codepen-Button": {
+    "prefix": "rne-codepen",
+    "body": [
+      "<SocialIcon",
+      "\ttype='codepen'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('codepen Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements mail-Button": {
+    "prefix": "rne-mail",
+    "body": [
+      "<SocialIcon",
+      "\ttype='envelope'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('mail Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements etsy-Button": {
+    "prefix": "rne-etsy",
+    "body": [
+      "<SocialIcon",
+      "\ttype='etsy'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('etsy Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements flickr-Button": {
+    "prefix": "rne-flickr",
+    "body": [
+      "<SocialIcon",
+      "\ttype='flickr'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('flickr Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements foursquare-Button": {
+    "prefix": "rne-foursquare",
+    "body": [
+      "<SocialIcon",
+      "\ttype='foursquare'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('foursquare Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements github-Button": {
+    "prefix": "rne-git",
+    "body": [
+      "<SocialIcon",
+      "\ttype='github'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('github Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements gitlab-Button": {
+    "prefix": "rne-gitlab",
+    "body": [
+      "<SocialIcon",
+      "\ttype='gitlab'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('gitlab Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements instagram-Button": {
+    "prefix": "rne-insta",
+    "body": [
+      "<SocialIcon",
+      "\ttype='instagram'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('instagram Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements linkedin-Button": {
+    "prefix": "rne-linkedin",
+    "body": [
+      "<SocialIcon",
+      "\ttype='linkedin'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('linkedin Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements medium-Button": {
+    "prefix": "rne-medium",
+    "body": [
+      "<SocialIcon",
+      "\ttype='medium'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('medium Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements pinterest-Button": {
+    "prefix": "rne-pinterest",
+    "body": [
+      "<SocialIcon",
+      "\ttype='pinterest'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('pinterest Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements quora-Button": {
+    "prefix": "rne-quora",
+    "body": [
+      "<SocialIcon",
+      "\ttype='quora'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('quora Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements reddit-alien-Button": {
+    "prefix": "rne-reddit",
+    "body": [
+      "<SocialIcon",
+      "\ttype='reddit-alien'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('reddit-alien Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements soundcloud-Button": {
+    "prefix": "rne-soundcloud",
+    "body": [
+      "<SocialIcon",
+      "\ttype='soundcloud'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('soundcloud Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements stack-overflow-Button": {
+    "prefix": "rne-stack-overflow",
+    "body": [
+      "<SocialIcon",
+      "\ttype='stack-overflow'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('stack-overflow Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements steam-Button": {
+    "prefix": "rne-steam",
+    "body": [
+      "<SocialIcon",
+      "\ttype='steam'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('steam Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements stumbleupon-Button": {
+    "prefix": "rne-stumbleupon",
+    "body": [
+      "<SocialIcon",
+      "\ttype='stumbleupon'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('stumbleupon Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements tumblr-Button": {
+    "prefix": "rne-tumblr",
+    "body": [
+      "<SocialIcon",
+      "\ttype='tumblr'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('tumblr Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements twitch-Button": {
+    "prefix": "rne-twitch",
+    "body": [
+      "<SocialIcon",
+      "\ttype='twitch'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('twitch Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements twitter-Button": {
+    "prefix": "rne-twitter",
+    "body": [
+      "<SocialIcon",
+      "\ttype='twitter'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('twitter Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements google-Button": {
+    "prefix": "rne-google",
+    "body": [
+      "<SocialIcon",
+      "\ttype='google'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('google Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements google-plus-official,-Button": {
+    "prefix": "rne-google-plus",
+    "body": [
+      "<SocialIcon",
+      "\ttype='google-plus-official,'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('google-plus-official, Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements vimeo-Button": {
+    "prefix": "rne-vimeo",
+    "body": [
+      "<SocialIcon",
+      "\ttype='vimeo'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('vimeo Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements vk-Button": {
+    "prefix": "rne-vk",
+    "body": [
+      "<SocialIcon",
+      "\ttype='vk'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('vk Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements weibo-Button": {
+    "prefix": "rne-weibo",
+    "body": [
+      "<SocialIcon",
+      "\ttype='weibo'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('weibo Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements wordpress-Button": {
+    "prefix": "rne-wordpress",
+    "body": [
+      "<SocialIcon",
+      "\ttype='wordpress'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('wordpress Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements youtube-Button": {
+    "prefix": "rne-youtube",
+    "body": [
+      "<SocialIcon",
+      "\ttype='youtube'",
+      "\ticonColor='white'",
+      "\ticonSize={24}",
+      "\tbutton={false}",
+      "\tloading={false}",
+      "\traised={true}",
+      "\tonPress={_=>alert('youtube Btn Pressed!')}",
+      "\tstyle={{}}",
+      "/>"
+    ]
+  },
+
+  "React Native Elements tile": {
+    "prefix": "rne-tile",
+    "body": [
+      "<Tile",
+      "\timageSrc={{uri:''}}",
+      "\ttitle='Title'",
+      "\ttitleStyle={{}}",
+      "\tfeatured={false}",
+      "\tcaption={'Captions'}",
+      "\tcaptionStyle={{}}",
+      "\tcontainerStyle={{}}",
+      "\ticon={{ name: 'play-circle', type: 'font-awesome' }}",
+      "\ticonContainerStyle={{}}",
+      "\timageContainerStyle={{}}",
+      "\tonPress={_=> alert('Tile Pressed!')}",
+      "\tactiveOpacity={0.2}",
+      "\t//height={100} // default Device Width * 0.8",
+      "\t//width={100} // default Device Width",
+      "/>"
+    ]
+  },
+
+  "React Native Elements Tooltip": {
+    "prefix": "rne-tooltip",
+    "body": [
+      "<Tooltip",
+      "\tpopover={<Text>Info here</Text>} // React Component",
+      "\tbackgroundColor={'#617080'}",
+      "\theight={40}",
+      "\twidth={150}",
+      "\thighlightColor={'transparent'}",
+      "\tonClose={_ => {}}",
+      "\tonOpen={_ => {}}",
+      "\toverlayColor={'rgba(250, 250, 250, 0.70)'}",
+      "\ttoggleOnPress={true}",
+      "\twithOverlay={true}",
+      "\twithPointer={true}",
+      "\tcontainerStyle={{}}",
+      ">",
+      "\t<Text>Press me</Text>",
+      "</Tooltip>"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "rn-elemets-snippets",
+  "displayName": "rn-elemets-snippets",
+  "description": "Generate react-native elements component just by typing one word.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "author": {
+    "name": "milanasync",
+    "email": "milanasyncdev@gmail.com",
+    "url": ""
+  }
+}
